@@ -294,9 +294,9 @@ int main(int argc,char *argv[])
 
 	else std::cout << "Unable to open ini file, using defaults." << std::endl;
 	
-	namedWindow("Display", WINDOW_NORMAL | WINDOW_KEEPRATIO); // 0 = WINDOW_NORMAL
-	resizeWindow("Display", 640, 640); 
-	moveWindow("Display", 0, 0);
+	//namedWindow("Display", WINDOW_NORMAL | WINDOW_KEEPRATIO); // 0 = WINDOW_NORMAL
+	//resizeWindow("Display", 640, 640); 
+	//moveWindow("Display", 0, 0);
 	
 	char const * FilterPatterns[2] =  { "*.avi","*.*" };
 	char const * OpenFileName = "input.mp4";
@@ -377,7 +377,7 @@ int main(int argc,char *argv[])
 		
         remap( res, dst, map_x, map_y, INTER_LINEAR, BORDER_CONSTANT, Scalar(0, 0, 0) );
         
-        imshow("Display", dst);
+        //imshow("Display", dst);
         //std::cout << "\x1B[2K"; // Erase the entire current line.
         std::cout << "\x1B[0E"; // Move to the beginning of the current line.
         fps++;
